@@ -1,10 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-// import axios from "axios";
+
 import axios from "axios";
 import { createContext, useState } from "react";
 import { toast } from "react-toastify";
-// import { toast } from "react-toastify";
 
 export const AdminContext = createContext();
 
