@@ -11,12 +11,14 @@ import AllAppointments from "./pages/Admin/AllAppointments";
 import AddDoctor from "./pages/Admin/AddDoctor";
 import DoctorList from "./pages/Admin/DoctorList";
 import Dashboard from "./pages/Admin/Dashboard";
+import { DoctorContext } from "./context/DoctorContext";
 
 const App = () => {
+  const { dToken } = useContext(DoctorContext);
   const { aToken } = useContext(AdminContext);
 
-  return aToken ? (
-    <div>
+  return dToken || aToken ? (
+    <div className="bg-[#F8F9FD]">
       <Navbar />
       <ToastContainer />
       <div className="flex items-start">
