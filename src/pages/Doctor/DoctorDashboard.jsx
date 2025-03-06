@@ -54,13 +54,13 @@ const DoctorDashboard = () => {
           </div>
         </div>
 
-        <div className="bg-white">
-          <div className="flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border">
+        <div className="bg-gray-50 shadow-lg ">
+          <div className="flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t ">
             <img src={assets.list_icon} alt="" />
             <p className="font-semibold">Latest Bookings</p>
           </div>
 
-          <div className="pt-4 border border-t-0">
+          <div className="pt-4 shadow-lg">
             {dashData.latestAppointments.slice(0, 5).map((item, index) => (
               <div
                 className="flex items-center px-6 py-3 gap-3 hover:bg-gray-100"
